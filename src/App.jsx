@@ -22,7 +22,6 @@ function App() {
       <CardInput setLinks={setLinks}/>
       <StaticsSection Links={Links}/>
       <Banner />
-
       <Footer />
     </main>
   );

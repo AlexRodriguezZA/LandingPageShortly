@@ -27,7 +27,7 @@ const CardInput = ({ setLinks }) => {
       full: data.result.original_link,
       short: data.result.short_link,
     };
-
+    setLinkInput("");
     setLinks((Prevlinks) => [NewlinkObject ,...Prevlinks]);
   };
  
@@ -43,6 +43,7 @@ const CardInput = ({ setLinks }) => {
           Error ? "border-2 border-secondary-red" : "border-none"
         }`}
         type="text"
+        value={LinkInput}
         placeholder="Shorten a link here..."
       />
       {Error ? (
