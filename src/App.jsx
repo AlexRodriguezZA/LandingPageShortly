@@ -19,8 +19,8 @@ function App() {
       <NavMobile />
       <Nav />
       <Header />
-      <CardInput setLinks={setLinks}/>
-      <StaticsSection Links={Links}/>
+      <CardInput setLinks={setLinks} />
+      <StaticsSection Links={Links} />
       <Banner />
       <Footer />
     </main>

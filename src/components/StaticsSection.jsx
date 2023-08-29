@@ -23,9 +23,8 @@ const StaticsSection = ({ Links }) => {
   return (
     <section className="w-full bg-neutral-100 flex flex-col items-center">
       <div className="w-11/12 flex flex-col items-center  max-w-screen-xl">
-        {
-          Links && Links.map( link => <CardLink LinkObject={link} key={link.short}/>)
-        }
+        {Links &&
+          Links.map((link) => <CardLink LinkObject={link} key={link.short} />)}
       </div>
 
       <div className="w-10/12 mt-16 lg:mt-20 flex flex-col items-center  max-w-screen-xl">
@@ -38,7 +37,7 @@ const StaticsSection = ({ Links }) => {
         </p>
       </div>
 
-      <div className="w-10/12 mt-20 grid grid-cols-1 gap-20 mb-20 md:mt-30 lg:grid-cols-3 lg:gap-x-10 place-items-center lg:mt-4  max-w-screen-xl">
+      <div className="w-10/12 mt-20 grid grid-cols-1 place-items-center gap-20 mb-20 md:mt-30 lg:grid-cols-3 lg:gap-x-10 lg:mt-4 max-w-screen-xl">
         <div className="bg-cyan-300 z-0 mx-auto absolute h-[500px] w-2 lg:w-9/12 lg:h-2 max-w-[900px]"></div>
         <CardStatics
           img={Card_img1}

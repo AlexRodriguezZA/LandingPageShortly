@@ -22,5 +22,5 @@ export default {
   },
   plugins: [
     require('tailwindcss-animated')
-  ],
+  ]['prettier-plugin-tailwindcss'],
 };
